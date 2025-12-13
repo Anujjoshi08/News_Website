@@ -1,0 +1,15 @@
+# Node/Vercel/Frontend
+node_modules/
+.env
+.DS_Store
+.vercel/
+.vercelignore
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+# Build outputs
+out/
+dist/
+.next/
+# Local dev servers
+coverage/
