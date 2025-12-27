@@ -1,4 +1,4 @@
-// Vercel Serverless Function
+// Vercel Serverless Function (moved under client/ for Vercel root)
 const demoNews = {
     articles: [
         {
