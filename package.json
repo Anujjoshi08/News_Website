@@ -3,8 +3,12 @@
   "private": true,
   "version": "1.0.0",
   "description": "News app monorepo (client + server)",
-  "workspaces": ["client", "server"],
+  "workspaces": [
+    "client",
+    "server"
+  ],
   "scripts": {
+    "dev": "concurrently \"npm run dev --prefix server\" \"npm run dev --prefix client\"",
     "dev:server": "npm run dev --prefix server",
     "start:server": "npm start --prefix server",
     "dev:client": "npm run dev --prefix client",
@@ -12,6 +16,14 @@
     "build": "npm run build --prefix client",
     "preview:client": "npm run preview --prefix client"
   },
-  "keywords": ["news", "api", "react", "express"],
-  "license": "MIT"
+  "keywords": [
+    "news",
+    "api",
+    "react",
+    "express"
+  ],
+  "license": "MIT",
+  "dependencies": {
+    "concurrently": "^9.2.1"
+  }
 }

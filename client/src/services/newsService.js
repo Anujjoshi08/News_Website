@@ -1,4 +1,6 @@
-const API_URL = '/api/news'
+const API_URL = typeof window !== 'undefined' && (window.location.hostname === 'localhost' || window.location.hostname === '127.0.0.1')
+  ? 'http://localhost:3000/api/news'
+  : '/api/news'
 
 export async function fetchNews(query = null, category = null){
   try{
